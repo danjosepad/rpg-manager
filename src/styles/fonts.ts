@@ -27,5 +27,4 @@ export const Span = styled.span`
   font-size: 14px;
   line-height: 16px;
   color: ${({ color }) => (color || colors.grayDark)};
-  font-weight: ${({ isBold }) => (isBold ? 700 : 400)};
 `;
