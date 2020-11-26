@@ -12,6 +12,8 @@ export const colors = {
   whiteDarker: '#F1F1F1',
   whiteLighter: '#E9E9E9',
   white: '#fbfbfb',
+
+  orange: '#FF7F11'
 };
 
 export const shadows = {
