@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, input {
   margin: 0;
   font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
