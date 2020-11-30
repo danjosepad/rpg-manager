@@ -16,7 +16,7 @@ interface InputProps {
   inputProps?: any
 }
 
-const Input: React.FC<InputProps> = ({ label, placeholder, inputProps, className }) => {
+const Input: React.FC<InputProps> = ({ label, placeholder = " ", inputProps, className }) => {
 
   return (
     <InputWrapper className={className}>
