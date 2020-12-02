@@ -20,8 +20,8 @@ const Input: React.FC<InputProps> = ({ label, placeholder = " ", inputProps, cla
 
   return (
     <InputWrapper className={className}>
-      <SInput placeholder={placeholder} {...inputProps}/>
-      <Label>{label}</Label>
+      <SInput id={label} placeholder={placeholder} {...inputProps}/>
+      <Label htmlFor={label}>{label}</Label>
     </InputWrapper>
   )
 }
