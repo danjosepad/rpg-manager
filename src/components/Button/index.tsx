@@ -6,16 +6,17 @@ import { AiOutlineLoading } from 'react-icons/ai';
 import { Button } from './styles'
 interface InputProps {
   text: string,
+  className?: string,
   background?: string
   loading?: boolean
   onClick?: () => any
 }
 
 
-const Input: React.FC<InputProps> = ({ text, onClick, background, loading = false }) => {
+const Input: React.FC<InputProps> = ({ text, onClick, background, loading = false, className }) => {
 
   return (
-    <Button background={background} onClick={onClick} loading={loading}>
+    <Button background={background} onClick={onClick} loading={loading} className={className}>
       {loading ? <AiOutlineLoading size={20} /> : text}
       </Button>
   )
