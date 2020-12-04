@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-
 // Project imports
 
-import { colors, shadows } from 'styles/theme'
+import Button from 'components/Button';
+import { colors } from 'styles/theme'
 import { H1, Span } from 'styles/fonts';
 
 export const Container = styled.div`
@@ -15,17 +15,15 @@ export const Container = styled.div`
   height: 100%;
 `
 
-export const LoginWrapper = styled.div`
-  background: ${colors.grayDark};
-  border-radius: 8px;
-  box-shadow: ${shadows.default};
+export const Form = styled.form`
   padding: 24px 16px;
-  max-width: 300px;
+  max-width: 600px;
   width: 100%;
 
   display: flex;
-  justify-content: center;
+  align-items: baseline;
 `
+
 
 export const Title = styled(H1).attrs({
   color: colors.orange
@@ -37,4 +35,8 @@ export const Description = styled(Span).attrs({
   color: colors.orange
 })`
   margin-bottom: 16px;
+`
+
+export const SButton = styled(Button)`
+  max-width: 120px;
 `
