@@ -3,11 +3,13 @@ import React from 'react';
 // Project imports
 
 import Routes from './routes'
+import Header from 'components/Header'
 
 function App() {
-  return (
+  return <>
+    <Header />
     <Routes />
-  )
+  </>
 }
 
 export default App;

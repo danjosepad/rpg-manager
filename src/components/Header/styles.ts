@@ -3,7 +3,7 @@ import { IoSettingsSharp } from 'react-icons/io5'
 
 // Project imports
 
-import { shadows } from 'styles/theme'
+import { colors, shadows } from 'styles/theme'
 
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF';
@@ -24,9 +24,8 @@ const rotate = keyframes`
 `
 
 export const Container = styled.div`
-  height: 40px;
-  border: 1px solid black;
-  background: black;
+  height: 60px;
+  background: ${colors.grayDarker};
   box-shadow: ${shadows.default};
   position: sticky;
   top: 0px;

@@ -48,14 +48,20 @@ export const InputWrapper = styled.div`
 export const SInput = styled.input`
   flex: 1;
   background: ${transparentize(0.75, colors.black)};
-  border: none;
+  border: 1px solid transparent;
   font-size: 14px;
   padding: 0px 8px;
   color: ${colors.grayLighter};
+  transition: border 0.2s;
+  outline: none;
 
   &::placeholder {
     color: ${colors.grayLighter};
     font-weight: 500;
+  }
+
+  &:focus{
+    border: 1px solid ${colors.orange};
   }
 `
 
