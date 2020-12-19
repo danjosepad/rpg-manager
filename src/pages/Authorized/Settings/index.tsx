@@ -4,14 +4,21 @@ import React from 'react'
 
 // Styled components
 
-interface UserInfoProps {
+import { Container, Wrapper, UserInfo, UserData } from './styles'
+
+interface SetttingsProps {
 
 }
 
-const UserInfo: React.FC<UserInfoProps> = () => {
+const Settings: React.FC<SetttingsProps> = () => {
   return (
-    <h1>User Info</h1>
+    <Container>
+      <Wrapper>
+        <UserInfo></UserInfo>
+        <UserData></UserData>
+      </Wrapper>
+    </Container>
   )
 }
 
-export default UserInfo
+export default Settings
