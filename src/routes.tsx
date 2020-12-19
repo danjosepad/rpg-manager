@@ -5,7 +5,7 @@ import { Switch, BrowserRouter, Route } from 'react-router-dom';
 // Project imports
 
 import Login from './pages/Login'
-import HomeRoute from './routes/Home'
+import HomeRoute from './pages/Authorized/routes'
 
 const Routes: React.FC = () => (
     <BrowserRouter>

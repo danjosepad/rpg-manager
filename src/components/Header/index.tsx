@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { IoSettingsSharp } from 'react-icons/io5'
 
 // Project imports
 
@@ -14,8 +14,10 @@ interface HeaderProps {}
 const Header: React.FC<HeaderProps> = () => {
   return (
     <Container>
-      <NameInfo>Olá, Daniel</NameInfo>
-      <Settings size={30} />
+      <NameInfo color="white">Olá, Daniel</NameInfo>
+      <Settings to="/settings">
+        <IoSettingsSharp size={30} />
+      </Settings>
     </Container>
   )
 }

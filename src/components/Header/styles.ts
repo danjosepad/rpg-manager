@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components'
-import { IoSettingsSharp } from 'react-icons/io5'
+
+import { Link } from 'react-router-dom'
 
 // Project imports
 
@@ -36,13 +37,16 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const Settings = styled(IoSettingsSharp)`
-  color: white;
-  transition: color 0.2s;
+export const Settings = styled(Link)`
 
-  &:hover {
-    cursor: pointer;
-    color: ${getRandomColor};
-    animation: ${rotate} 4s linear infinite;
+  svg {
+    color: white;
+    transition: color 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      color: ${getRandomColor};
+      animation: ${rotate} 4s linear infinite;
+    }
   }
 `
