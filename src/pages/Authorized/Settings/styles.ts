@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
   max-width: 600px;
+  justify-content: center;
 
 `
 export const UserInfo = styled.div`

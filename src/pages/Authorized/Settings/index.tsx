@@ -1,6 +1,9 @@
+
 import React from 'react'
 
 // Project imports
+
+import UserPicture from 'components/UserPicture'
 
 // Styled components
 
@@ -14,7 +17,9 @@ const Settings: React.FC<SetttingsProps> = () => {
   return (
     <Container>
       <Wrapper>
-        <UserInfo></UserInfo>
+        <UserInfo>
+          <UserPicture size="140" fullName="Daniel Padilha" />
+        </UserInfo>
         <UserData></UserData>
       </Wrapper>
     </Container>
