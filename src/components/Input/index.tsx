@@ -13,14 +13,14 @@ interface InputProps {
   className?: string,
   label: string,
   placeholder?: string,
-  inputProps?: any
 }
 
-const Input: React.FC<InputProps> = ({ label, placeholder = " ", inputProps, className }) => {
-
+const Input: React.FC<
+  InputProps & React.InputHTMLAttributes<HTMLInputElement>
+> = ({ label, placeholder = " ", className, ...props }) => {
   return (
     <InputWrapper className={className}>
-      <SInput id={label} placeholder={placeholder} {...inputProps}/>
+      <SInput id={label} placeholder={placeholder} {...props}/>
       <Label htmlFor={label}>{label}</Label>
     </InputWrapper>
   )
