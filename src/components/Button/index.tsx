@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 import { AiOutlineLoading } from 'react-icons/ai';
 
 // Styled components
@@ -13,10 +13,18 @@ interface InputProps {
 }
 
 
-const Input: React.FC<InputProps> = ({ text, onClick, background, loading = false, className }) => {
+const Input: React.FC<
+InputProps & React.ButtonHTMLAttributes<HTMLButtonElement>
+> = ({ text, onClick, background, loading = false, className, ...props }) => {
 
   return (
-    <Button background={background} onClick={onClick} loading={loading} className={className}>
+    <Button
+      background={background}
+      onClick={onClick}
+      loading={loading}
+      className={className}
+      {...props}
+      >
       {loading ? <AiOutlineLoading size={20} /> : text}
       </Button>
   )
