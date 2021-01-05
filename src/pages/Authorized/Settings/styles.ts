@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { Link as RouterLink } from 'react-router-dom'
 
 import { colors } from 'styles/theme'
 
@@ -33,4 +33,8 @@ export const UserData = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 24px;
+`
+
+export const Link = styled(RouterLink)`
+  text-decoration: none;
 `

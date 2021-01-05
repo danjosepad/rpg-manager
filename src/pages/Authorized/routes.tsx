@@ -6,12 +6,14 @@ import { Switch,  Route } from 'react-router-dom';
 
 import Header from 'components/Header'
 import HomePage from 'pages/Authorized/Home'
+import ChangePasswordPage from 'pages/Authorized/ChangePassword'
 import SettingsPage from 'pages/Authorized/Settings'
 
 const AuthorizedRoute: React.FC = () => (
   <>
     <Header />
     <Switch>
+      <Route path="/change-password" component={ChangePasswordPage} />
       <Route path="/settings" component={SettingsPage} />
       <Route path="/" component={HomePage} />
     </Switch>

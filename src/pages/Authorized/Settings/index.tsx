@@ -10,7 +10,7 @@ import Button from 'components/Button'
 
 // Styled components
 
-import { Container, Wrapper, UserInfo, UserData } from './styles'
+import { Container, Wrapper, UserInfo, UserData, Link } from './styles'
 
 
 interface SetttingsProps {
@@ -35,7 +35,9 @@ const Settings: React.FC<SetttingsProps> = () => {
             label="Nome"
             value="Teste"
           />
-          <Button text="Alterar sua senha"/>
+          <Link to="/change-password">
+            <Button text="Alterar sua senha"/>
+          </Link>
         </UserData>
       </Wrapper>
     </Container>
