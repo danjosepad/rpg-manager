@@ -6,7 +6,7 @@ import { colors } from 'styles/theme'
 
 interface DefaultButton {
   background?: string
-  loading: boolean
+  loading?: boolean
 }
 
 const rotate = keyframes`

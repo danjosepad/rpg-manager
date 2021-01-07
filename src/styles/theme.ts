@@ -20,5 +20,6 @@ export const colors = {
 
 export const shadows = {
   default: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+  bottom: '0 4px 2px -2px rgba(0, 0, 0, 0.25)',
   Card: '0px 6px 4px rgba(0, 0, 0, 0.37)',
 };
