@@ -36,7 +36,7 @@ export const Wrapper = styled.div<WrapperProps>`
 
 export const Container = styled.div`
   position: relative;
-  margin: 20% auto;
+  margin: 15% auto;
   max-width: 600px;
   width: 85%;
   border-radius: 16px;
@@ -56,4 +56,14 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   padding: 20px;
+`
+
+export const ExitButton = styled.button`
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
 `
