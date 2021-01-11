@@ -1,21 +1,35 @@
-import React, { ReactNode } from 'react';
+import React, { useState, ReactNode } from 'react';
 
 // Project imports
 
 // Styled components
 
-import { Wrapper, Container, Content, Title } from './styles'
+import { Wrapper, Container, Content, Title, ExitButton } from './styles'
 
 interface ModalProps {
   isShowing: boolean
+  onExit?: () => any
   children: ReactNode
   title?: string
 }
 
-const Modal: React.FC<ModalProps> = ({ isShowing, children, title = '' }) => {
+const Modal: React.FC<ModalProps> = ({
+  isShowing,
+  children,
+  title = '',
+  onExit = () => {}
+}) => {
+  const [showing, setShowing] = useState<boolean>(isShowing)
+
+  const closeModal = () => {
+    setShowing(false)
+    onExit()
+  }
+
   return (
-    <Wrapper isShowing={isShowing}>
+    <Wrapper isShowing={showing}>
       <Container>
+        <ExitButton onClick={closeModal}>Teste</ExitButton>
         {title && (
           <Title>Texto</Title>
         )}
