@@ -19,17 +19,11 @@ const Modal: React.FC<ModalProps> = ({
   title = '',
   onExit = () => {}
 }) => {
-  const [showing, setShowing] = useState<boolean>(isShowing)
-
-  const closeModal = () => {
-    setShowing(false)
-    onExit()
-  }
 
   return (
-    <Wrapper isShowing={showing}>
+    <Wrapper isShowing={isShowing}>
       <Container>
-        <ExitButton onClick={closeModal}>Teste</ExitButton>
+        <ExitButton onClick={onExit}>Teste</ExitButton>
         {title && (
           <Title>Texto</Title>
         )}
