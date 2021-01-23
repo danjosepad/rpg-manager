@@ -1,6 +1,9 @@
 import React, { ReactNode } from 'react';
+import { AiOutlineClose } from 'react-icons/ai'
 
 // Project imports
+
+import { colors } from 'styles/theme'
 
 // Styled components
 
@@ -23,7 +26,9 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <Wrapper isShowing={isShowing}>
       <Container>
-        <ExitButton onClick={onClose}>Teste</ExitButton>
+        <ExitButton onClick={onClose}>
+          <AiOutlineClose size={30} color={colors.grayLighter} />
+        </ExitButton>
         {title && (
           <Title>Texto</Title>
         )}
