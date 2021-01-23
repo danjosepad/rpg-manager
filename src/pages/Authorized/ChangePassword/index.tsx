@@ -26,13 +26,16 @@ const LottieOptions = {
 };
 
 const ChangePassword: React.FC<ChangePasswordProps> = () => {
+  const [isShowingModal, setIsShowingModal] = useState<boolean>(true)
+
+
   return (
     <Container>
       <Input label="Sua senha" type="password" />
       <Input label="Confirme sua senha" type="password" />
       <Button text="alterar" type="submit" />
 
-      <Modal isShowing={true}>
+      <Modal isShowing={isShowingModal} onClose={() => setIsShowingModal(false)}>
         <Wrapper>
           <Lottie
             options={LottieOptions}
