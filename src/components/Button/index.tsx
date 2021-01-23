@@ -14,7 +14,7 @@ interface InputProps {
 
 
 const Input: React.FC<
-InputProps & React.ButtonHTMLAttributes<HTMLButtonElement>
+InputProps & ButtonHTMLAttributes<HTMLButtonElement>
 > = ({ text, onClick, background, loading = false, className, ...props }) => {
 
   return (
