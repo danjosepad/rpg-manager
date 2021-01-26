@@ -10,6 +10,7 @@ import Input from 'components/Input'
 import Button from 'components/Button'
 import Modal from 'components/Modal'
 import Success from 'assets/jsons/success.json'
+import Form from './components/Form'
 
 // Styled components
 
@@ -31,10 +32,7 @@ const ChangePassword: React.FC<ChangePasswordProps> = () => {
 
   return (
     <Container>
-      <Input label="Sua senha" type="password" />
-      <Input label="Confirme sua senha" type="password" />
-      <Button text="alterar" type="submit" />
-
+      <Form onSubmit={() => {}} />
       <Modal isShowing={isShowingModal} onClose={() => setIsShowingModal(false)}>
         <Wrapper>
           <Lottie
