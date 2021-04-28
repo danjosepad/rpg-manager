@@ -7,17 +7,13 @@ import UserPicture from 'components/UserPicture'
 import { H3 as Name, H2 } from 'styles/fonts'
 import Input from 'components/Input'
 import Button from 'components/Button'
+import { SetttingsProps } from './Settings.props'
 
 // Styled components
 
 import { Container, Wrapper, UserInfo, UserData, Link } from './styles'
 
-
-interface SetttingsProps {
-
-}
-
-const Settings: React.FC<SetttingsProps> = () => {
+const Settings = ({}: SetttingsProps) => {
   return (
     <Container>
       <Wrapper>
