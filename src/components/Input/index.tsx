@@ -1,5 +1,9 @@
 import React from 'react'
 
+// Project imports
+
+import { InputProps } from './Input.props'
+
 // Styled components
 
 import {
@@ -8,16 +12,7 @@ import {
  Label
 } from './styles'
 
-
-interface InputProps {
-  className?: string,
-  label: string,
-  placeholder?: string,
-}
-
-const Input: React.FC<
-  InputProps & React.InputHTMLAttributes<HTMLInputElement>
-> = ({ label, placeholder = " ", className, ...props }) => {
+const Input = ({ label, placeholder = " ", className, ...props }: InputProps) => {
   return (
     <InputWrapper className={className}>
       <SInput id={label} placeholder={placeholder} {...props}/>
