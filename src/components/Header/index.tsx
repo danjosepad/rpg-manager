@@ -4,14 +4,13 @@ import { IoSettingsSharp } from 'react-icons/io5'
 // Project imports
 
 import { H4 as NameInfo } from 'styles/fonts'
+import { HeaderProps } from './Header.props'
 
 // Styled components
 
 import { Container, Settings } from './styles'
 
-interface HeaderProps {}
-
-const Header: React.FC<HeaderProps> = () => {
+const Header = ({}: HeaderProps) => {
   return (
     <Container>
       <NameInfo color="white">Olá, Daniel</NameInfo>
