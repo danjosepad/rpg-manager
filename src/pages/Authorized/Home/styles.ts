@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 // Project imports
 
-import Button from 'components/Button';
+import Input from 'components/Input'
+import Button from 'components/Button'
 import { colors } from 'styles/theme'
-import { H1, Span } from 'styles/fonts';
+import { H1, Span } from 'styles/fonts'
 
 export const Container = styled.div`
   background: ${colors.black};
@@ -39,4 +40,8 @@ export const Description = styled(Span).attrs({
 
 export const SButton = styled(Button)`
   max-width: 120px;
+`
+
+export const SInput = styled(Input)`
+  background: ${colors.grayDark};
 `

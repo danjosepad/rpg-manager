@@ -1,25 +1,16 @@
 
 import React from 'react'
-import styled from 'styled-components';
 
 // Project imports
 
-
-import Input from 'components/Input'
-import { colors } from 'styles/theme';
+import { HomePageProps } from './Home.props'
 import Tables from 'components/Tables'
 
 // Styled components
 
-import { Container,Title, Form, SButton } from './styles'
+import { Container,Title, Form, SButton, SInput } from './styles'
 
-interface HomePageProps {}
-
-const SInput = styled(Input)`
-  background: ${colors.grayDark};
-`;
-
-const HomePage: React.FC<HomePageProps> = () => {
+const HomePage = ({}: HomePageProps) => {
   return (
     <Container>
       <Title>Suas mesas</Title>

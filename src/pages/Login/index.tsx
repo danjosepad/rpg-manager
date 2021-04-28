@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from 'react'
 
 // Styled components
 
@@ -7,14 +6,14 @@ import {
   Container,
   LoginWrapper,
   Title,
-} from './styles';
+} from './styles'
 
 // Project imports
 
-import Button from 'components/Button';
-import Input from 'components/Input';
+import Button from 'components/Button'
+import Input from 'components/Input'
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <Container>
       <Title>RPG Manager</Title>
@@ -27,4 +26,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home;
+export default Home
