@@ -1,21 +1,22 @@
-import React, { ButtonHTMLAttributes } from 'react'
+import React from 'react'
 import { AiOutlineLoading } from 'react-icons/ai';
+
+// Project imports
+
+import { InputProps } from './Button.props'
 
 // Styled components
 
 import { Button } from './styles'
-interface InputProps {
-  text: string,
-  className?: string,
-  background?: string
-  loading?: boolean
-  onClick?: () => any
-}
 
-
-const Input: React.FC<
-InputProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ text, onClick, background, loading = false, className, ...props }) => {
+const Input = ({ 
+  text, 
+  onClick, 
+  background, 
+  loading = false, 
+  className, 
+  ...props 
+}: InputProps) => {
 
   return (
     <Button
