@@ -4,24 +4,18 @@ import { AiOutlineClose } from 'react-icons/ai'
 // Project imports
 
 import { colors } from 'styles/theme'
+import { ModalProps } from './Modal.props'
 
 // Styled components
 
 import { Wrapper, Container, Content, Title, ExitButton } from './styles'
 
-interface ModalProps {
-  isShowing: boolean
-  onClose?: () => any
-  children: ReactNode
-  title?: string
-}
-
-const Modal: React.FC<ModalProps> = ({
+const Modal = ({
   isShowing,
   children,
   title = '',
   onClose = () => {}
-}) => {
+}: ModalProps) => {
 
   return (
     <Wrapper isShowing={isShowing}>
