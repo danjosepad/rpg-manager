@@ -1,1 +1,1 @@
-import { default } from './UserPicture'
+export { default } from './UserPicture'
