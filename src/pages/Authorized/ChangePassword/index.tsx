@@ -11,13 +11,12 @@ import Button from 'components/Button'
 import Modal from 'components/Modal'
 import Success from 'assets/jsons/success.json'
 import Form from './components/Form'
-import { ChangePasswordProps } from './ChangePassword.props'
 
 // Styled components
 
 import { Container, Wrapper } from './styles'
 
-const ChangePassword = ({}: ChangePasswordProps) => {
+const ChangePassword = () => {
   const [isShowingModal, setIsShowingModal] = useState<boolean>(true)
 
   const LottieOptions = {
