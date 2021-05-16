@@ -3,11 +3,8 @@ import { AiOutlineLoading } from 'react-icons/ai';
 
 // Project imports
 
-import { InputProps } from './Button.props'
-
-// Styled components
-
-import { Button } from './styles'
+import { InputProps } from './Button.types'
+import { Button } from './Button.style'
 
 const Input = ({ 
   text, 
