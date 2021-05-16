@@ -6,8 +6,6 @@ import Lottie from 'react-lottie'
 
 import { H3 as Message } from 'styles/fonts'
 import { colors } from 'styles/theme'
-import Input from 'components/Input'
-import Button from 'components/Button'
 import Modal from 'components/Modal'
 import Success from 'assets/jsons/success.json'
 import Form from './components/Form'
