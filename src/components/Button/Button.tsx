@@ -4,9 +4,9 @@ import { AiOutlineLoading } from 'react-icons/ai';
 // Project imports
 
 import { ButtonProps } from './Button.props'
-import { Button } from './Button.style'
+import { SButton } from './Button.style'
 
-const Input = ({ 
+const Button = ({ 
   text, 
   onClick, 
   background, 
@@ -16,16 +16,16 @@ const Input = ({
 }: ButtonProps) => {
 
   return (
-    <Button
+    <SButton
       background={background}
       onClick={onClick}
       className={className}
       {...props}
       >
       {loading ? <AiOutlineLoading data-testid="button__loading" size={20} /> : text}
-      </Button>
+      </SButton>
   )
 }
 
 
-export default Input
+export default Button

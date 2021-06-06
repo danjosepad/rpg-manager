@@ -18,7 +18,7 @@ const rotate = keyframes`
   }
 `;
 
-export const Button = styled.button<DefaultButton>`
+export const SButton = styled.button<DefaultButton>`
   height: 40px;
   display: flex;
   width: 100%;
