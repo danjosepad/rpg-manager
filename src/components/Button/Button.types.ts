@@ -8,4 +8,4 @@ export type InputComponentProps = {
   onClick?: () => any
 }
 
-export type InputProps = InputComponentProps & ButtonHTMLAttributes<HTMLButtonElement>
+export type ButtonProps = InputComponentProps & ButtonHTMLAttributes<HTMLButtonElement>

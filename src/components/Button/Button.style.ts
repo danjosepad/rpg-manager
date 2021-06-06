@@ -36,7 +36,7 @@ export const Button = styled.button<DefaultButton>`
   text-transform: uppercase;
 
 
-    ${({ loading }) => loading && css`
+    ${({ loading }) => loading as boolean && css`
       svg {
         animation: ${rotate} 2s linear infinite;
       }
