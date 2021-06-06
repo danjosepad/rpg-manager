@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 
 import Button from './index'
-import { ButtonProps } from './Button.types'
+import { ButtonProps } from './Button.props'
 import { ButtonMock } from './Button.mocks'
 
 const mountComponent = (props: ButtonProps) => render(<Button {...props} />)

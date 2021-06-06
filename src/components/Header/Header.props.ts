@@ -1,1 +1,3 @@
-export type HeaderProps = {}
+export type HeaderProps = {
+  name: string
+}

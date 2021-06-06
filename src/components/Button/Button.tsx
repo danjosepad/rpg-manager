@@ -3,7 +3,7 @@ import { AiOutlineLoading } from 'react-icons/ai';
 
 // Project imports
 
-import { ButtonProps } from './Button.types'
+import { ButtonProps } from './Button.props'
 import { Button } from './Button.style'
 
 const Input = ({ 
