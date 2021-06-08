@@ -5,15 +5,8 @@ import { Link } from 'react-router-dom'
 // Project imports
 
 import { colors, shadows } from 'styles/theme'
+import { getRandomColor } from './utils/getRandomColor'
 
-const getRandomColor = () => {
-  const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
 
 const rotate = keyframes`
   from {
