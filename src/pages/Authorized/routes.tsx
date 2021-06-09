@@ -11,7 +11,7 @@ import SettingsPage from 'pages/Authorized/Settings'
 
 const AuthorizedRoute: React.FC = () => (
   <>
-    <Header />
+    <Header name="Daniel" />
     <Switch>
       <Route path="/change-password" component={ChangePasswordPage} />
       <Route path="/settings" component={SettingsPage} />

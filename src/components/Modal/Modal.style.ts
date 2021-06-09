@@ -5,9 +5,6 @@ import { transparentize } from 'polished'
 
 import { colors, shadows } from 'styles/theme'
 
-interface WrapperProps {
-  isShowing: boolean
-}
 
 const scrollTop = keyframes`
   from {
@@ -20,10 +17,7 @@ const scrollTop = keyframes`
   }
 `
 
-export const Wrapper = styled.div<WrapperProps>`
-  ${({ isShowing }) => !isShowing && `
-    display: none;
-  `};
+export const Wrapper = styled.div`
   position: fixed;
   z-index: 1;
   left: 0;
