@@ -5,11 +5,11 @@ import React from 'react';
 import { Span as Description, H3 as Title, H4 as Info} from 'styles/fonts'
 import { colors } from 'styles/theme'
 import { Container } from './TableCard.style'
-import { TableCardProps } from './TableCard.types'
+import { TableCardProps } from './TableCard.props'
 
 const TableCard = ({ tableData }: TableCardProps) => {
   return (
-    <Container img={tableData.img}>
+    <Container img={tableData.img} data-testid="table-card__container">
       <Title color={colors.orange}>{tableData.name}</Title>
       <Info>N de participantes: {tableData.playersQuantity}</Info>
       <Description color={colors.grayLight}>
