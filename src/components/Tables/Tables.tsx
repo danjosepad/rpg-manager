@@ -4,13 +4,14 @@ import React from 'react'
 
 import TableCard from './components/TableCard'
 import { Container } from './Tables.style'
-import { TableCardProps } from './Tables.types'
+import { TablesProps } from './Tables.props'
+import { TableCardProps } from './components/TableCard/TableCard.props'
 
-const Tables = ({ data }: TableCardProps) => {
+const Tables = ({ data }: TablesProps) => {
   return (
     <Container>
-      {data.map((item: any) => (
-        <TableCard tableData={item}/>
+      {data.map((item: TableCardProps, idx) => (
+        <TableCard key={idx + item.tableData.name} tableData={item.tableData}/>
       ))}
     </Container>
   )
