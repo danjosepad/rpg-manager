@@ -3,7 +3,7 @@ import React from 'react'
 // Project imports
 
 import { getInitials } from './utils/getInitials'
-import { UserPictureProps } from './UserPicture.types'
+import { UserPictureProps } from './UserPicture.props'
 import { Container, Name } from './UserPicture.style'
 
 const UserPicture = ({ className, fullName, size = "40", img}: UserPictureProps) => {
@@ -14,6 +14,7 @@ const UserPicture = ({ className, fullName, size = "40", img}: UserPictureProps)
       className={className}
       size={size}
       image={img}
+      data-testid="user-picture__container"
     >
       {fullName && !img && (
         <Name>{userInitials}</Name>
