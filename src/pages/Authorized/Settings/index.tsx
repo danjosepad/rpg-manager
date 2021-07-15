@@ -13,7 +13,7 @@ import { SetttingsProps } from './Settings.props'
 
 import { Container, Wrapper, UserInfo, UserData, Link } from './styles'
 
-const Settings = ({}: SetttingsProps) => {
+const Settings = (props: SetttingsProps) => {
   return (
     <Container>
       <Wrapper>
